@@ -10,16 +10,16 @@ namespace kurs.Models
  
     class Student
     {
-         string username;
-         string firstname;
-         string lastname; 
-         int groupnumber;
-        int birthday; 
-        string adress;
-         int phonenumber;
-         string email;
-         string pasword;
-         int score;
+        public  string username;
+        public string firstname;
+        public string lastname;
+        public int groupnumber;
+        public string birthday;
+        public string adress;
+        public  int phonenumber;
+        public  string email;
+        public string pasword;
+        public int score;
 
         public Student()
         {
@@ -27,7 +27,7 @@ namespace kurs.Models
         }
 
         public Student(string name, string firstname, string lastname, int groupnumber,
-         int birthday,
+         string birthday,
          string email,string pasword)
         {
             this.username = name;
@@ -53,7 +53,7 @@ namespace kurs.Models
 
 
         public Student(string name, string firstname, string lastname, int groupnumber,
-         int birthday,
+         string birthday,
          string adess,
          int phonenumber,
          string email,
@@ -70,7 +70,14 @@ namespace kurs.Models
         this.email = email;
         this.pasword = pasword;
         this.score = score;
+        }   
+
+        public void GetInfo()
+        {
+            Console.WriteLine($"username:{username} firstname: {firstname} lastname: {lastname} groupnumber:{groupnumber} birthday: {birthday}");
+
         }
+            
     }
 
 }

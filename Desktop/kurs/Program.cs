@@ -1,13 +1,24 @@
 ﻿
-//oupnumber} birthday: {birthday} adress; {adress} phonenumber: {phonenumber} email:{email} pasword: {pasword} score: {score}              ");
 using kurs.Models;
 
-Student student = new Student();
-
-student("ali", "aliyev", "ali", "4", "22", "salam", "salam");
-Console.WriteLine(student);
-
-public void GetName("firstname" + "lastname")
+namespace kurs
 {
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Student student = new Student()
+            {
+                username = "Elcan101",
+                firstname = "Elcan",
+                lastname = "Eliyev",
+                groupnumber = 363625,
+                birthday = "22.07.2006",
+                email = "elcan@gmail.com",
+                pasword = "salamdunya"
+            };
 
+            student.GetInfo();
+        }
+    }
 }
