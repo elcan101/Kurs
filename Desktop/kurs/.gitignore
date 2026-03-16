@@ -1,0 +1,54 @@
+# .NET / C# / Visual Studio / Rider .gitignore
+
+# Build results
+
+bin/
+obj/
+out/
+
+# User-specific files
+
+*.user
+*.userosscache
+*.suo
+*.userprefs
+
+# Visual Studio cache
+
+.vs/
+.vscode/
+
+# Rider
+
+.idea/
+
+# Logs
+
+*.log
+
+# NuGet
+
+*.nupkg
+*.snupkg
+packages/
+.nuget/
+
+# .NET CLI
+
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Test results
+
+TestResults/
+*.trx
+
+# Publish output
+
+publish/
+
+# OS files
+
+.DS_Store
+Thumbs
