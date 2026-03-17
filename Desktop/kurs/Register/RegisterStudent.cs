@@ -20,5 +20,20 @@ public static class RegisterStudent
         }
         Console.WriteLine();
     }
+
+    public static void Login(string username, string password)
+    {
+        var user = students.FirstOrDefault(s =>
+            s.username == username && s.pasword == password);
+
+        if (user != null)
+        {
+            Console.WriteLine($" {user.firstname} {user.lastname}");
+        }
+        else
+        {
+            Console.WriteLine("Username və ya şifrə yanlışdır!");
+        }
+    }
 }
 

@@ -93,7 +93,14 @@ namespace kurs
 
             RegisterStudent.Register(Leyla);
             RegisterStudent.Register(Kamran);
+            
+            Console.Write("Username daxil et: ");
+            string username = Console.ReadLine();
 
+            Console.Write("Password daxil et: ");
+            string password = Console.ReadLine();
+
+            RegisterStudent.Login(username, password);
             // student.GetInfo();
         }
     }
