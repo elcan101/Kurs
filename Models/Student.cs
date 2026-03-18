@@ -8,18 +8,19 @@ namespace kurs.Models
 {
     
  
-   public class Student
+   public class Student: BaseUser
     {
-        public  string username { get; set; }
-        public string firstname{ get; set; }
-        public string lastname{ get; set; }
-        public int groupnumber{ get; set; }
-        public string birthday{ get; set; }
-        public string adress{ get; set; }
-        public  int phonenumber{ get; set; }
-        public  string email{ get; set; }
-        public string pasword{ get; set; }
-        public int score{ get; set; }
+    //    public  string username { get; set; }
+    //    public string firstname{ get; set; }
+    //    public string lastname{ get; set; }
+       public int groupnumber{ get; set; }
+    //    public string birthday{ get; set; }
+    //    public string adress{ get; set; }
+    //    public  int phonenumber{ get; set; }
+    //    public  string email{ get; set; }
+    //    public string pasword{ get; set;
+       public int score{ get; set; }
+
 
         //public Student()
         //{

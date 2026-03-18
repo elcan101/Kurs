@@ -16,7 +16,7 @@ public static class RegisterStudent
 
         foreach (var item in students)
         {
-            Console.WriteLine($"{item.firstname} {item.lastname}");
+            Console.WriteLine($"{item.Firstname} {item.Lastname}");
         }
         Console.WriteLine();
     }
@@ -24,11 +24,11 @@ public static class RegisterStudent
     public static void Login(string username, string password)
     {
         var user = students.FirstOrDefault(s =>
-            s.username == username && s.pasword == password);
+            s.Username == username && s.Pasword == password);
 
         if (user != null)
         {
-            Console.WriteLine($" {user.firstname} {user.lastname}");
+            Console.WriteLine($" {user.Firstname} {user.Lastname}");
         }
         else
         {
